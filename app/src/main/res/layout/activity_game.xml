@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 21-Dec-2019 Cricbuzz.com
+  ~ All rights reserved.
+  ~
+  ~ http://www.cricbuzz.com
+  ~ @author: kshitiz.kapur
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.GameActivity">
+
+    <ImageView android:layout_width="320dp" android:layout_height="320dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:background="@color/colorPrimary"
+               android:id="@+id/imgDetail"
+    android:layout_marginTop="64dp"/>
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/eTxtAnswer"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imgDetail"
+    tools:text="hello"
+    android:layout_marginTop="24dp"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/eTxtAnswer"
+    android:text="SUBMIT"
+            android:onClick="submitClick"
+    android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

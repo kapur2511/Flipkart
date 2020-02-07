@@ -1,0 +1,11 @@
+<!--
+  ~ Copyright (C) 21-Dec-2019 Cricbuzz.com
+  ~ All rights reserved.
+  ~
+  ~ http://www.cricbuzz.com
+  ~ @author: kshitiz.kapur
+  -->
+
+<resources>
+    <string name="app_name">FlipkartTest</string>
+</resources>
